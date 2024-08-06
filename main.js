@@ -8,7 +8,7 @@ app.use(express.static(path));
 const port = process.env.PORT;
 
 app.get("/", (req, res) =>
-  res.send("Welcome to a backend system deployed with Jenkins")
+  res.send("Welcome to a backend system deployed with Jenkins.")
 );
 app.get("/home", (req, res) => {
   res.sendFile(path + "index.html");
